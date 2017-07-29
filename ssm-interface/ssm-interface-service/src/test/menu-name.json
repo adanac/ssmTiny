@@ -1,0 +1,54 @@
+{
+  "menus": [
+    {
+      "组1": [
+        {
+          "groupId": 1,
+          "groupName": "组1",
+          "id": 1,
+          "menuName": "竖排菜单1－1",
+          "sort": 1
+        },
+        {
+          "groupId": 1,
+          "groupName": "组1",
+          "id": 2,
+          "menuName": "竖排菜单1－3",
+          "sort": 2
+        },
+        {
+          "groupId": 1,
+          "groupName": "组1",
+          "id": 3,
+          "menuName": "竖排菜单1－2",
+          "sort": 3
+        },
+        {
+          "groupId": 1,
+          "groupName": "组1",
+          "id": 101,
+          "menuName": "insert for test",
+          "sort": 8
+        },
+        {
+          "groupId": 1,
+          "groupName": "组1",
+          "id": 102,
+          "menuName": "insert for test2",
+          "sort": 8
+        }
+      ]
+    },
+    {
+      "组2": [
+        {
+          "groupId": 2,
+          "groupName": "组2",
+          "id": 4,
+          "menuName": "竖排菜单2－1",
+          "sort": 4
+        }
+      ]
+    }
+  ]
+}

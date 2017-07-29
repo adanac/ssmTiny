@@ -8,11 +8,11 @@ package com.adanac.ssm.service;
  */
 public interface MailNotifyService {
 
-	/**
-	 * 发送通知邮件
-	 *
-	 * @param title   邮件标题
-	 * @param content 邮件正文
-	 */
-	void sendMail(String title, String content);
+    /**
+     * 发送通知邮件
+     *
+     * @param title   邮件标题
+     * @param content 邮件正文
+     */
+    void sendMail(String title, String content);
 }

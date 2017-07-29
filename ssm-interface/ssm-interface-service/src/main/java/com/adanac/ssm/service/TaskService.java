@@ -1,8 +1,8 @@
 package com.adanac.ssm.service;
 
-import java.util.List;
-
 import com.adanac.ssm.intf.common.domain.bean.Task;
+
+import java.util.List;
 
 /**
  * Copyright: 2016 Haiziwang
@@ -13,11 +13,11 @@ import com.adanac.ssm.intf.common.domain.bean.Task;
  */
 public interface TaskService {
 
-	/**
-	 * 查询所有的可调度任务
-	 *
-	 * @return 任务列表
-	 */
-	List<Task> selectAllTasks();
+    /**
+     * 查询所有的可调度任务
+     *
+     * @return 任务列表
+     */
+    List<Task> selectAllTasks();
 
 }

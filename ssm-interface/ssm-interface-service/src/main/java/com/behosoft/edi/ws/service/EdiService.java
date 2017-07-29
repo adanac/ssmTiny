@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ediService complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType name="ediService">
  *   &lt;complexContent>
@@ -22,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ediService", propOrder = {
-    "reqData"
+        "reqData"
 })
 public class EdiService {
 
@@ -35,11 +33,9 @@ public class EdiService {
 
     /**
      * Gets the value of the reqData property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getReqData() {
         return reqData;
@@ -47,11 +43,9 @@ public class EdiService {
 
     /**
      * Sets the value of the reqData property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setReqData(String value) {
         this.reqData = value;
