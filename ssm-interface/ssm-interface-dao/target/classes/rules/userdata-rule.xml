@@ -1,6 +1,0 @@
-<rules>
-    <rule>
-        <namespace>mybatis.mapper.UserDataMapper</namespace>
-        <shards>partition2</shards>
-    </rule>
-</rules>
