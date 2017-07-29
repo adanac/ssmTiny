@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ssm-interface-service</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.adanac.ssm</groupId>
+        <artifactId>ssm-interface</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adanac.ssm</groupId>
+            <artifactId>ssm-interface-dao</artifactId>
+            <version>${ssm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.adanac.ssm</groupId>
+            <artifactId>ssm-platform-service</artifactId>
+            <version>${ssm.version}</version>
+        </dependency>
+
+        <!-- Commons Lang -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <!-- dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+    </dependencies>
+</project>

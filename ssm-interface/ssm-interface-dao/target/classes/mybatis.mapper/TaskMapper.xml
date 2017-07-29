@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--Author: Adanac-->
+<mapper namespace="mybatis.mapper.TaskMapper" >
+  <resultMap id="BaseResultMap" type="com.adanac.ssm.intf.common.domain.bean.Task" >
+    <id column="sys_no" property="sysNo" jdbcType="BIGINT" />
+    <result column="task_no" property="taskNo" jdbcType="VARCHAR" />
+    <result column="task_name" property="taskName" jdbcType="VARCHAR" />
+    <result column="task_status" property="taskStatus" jdbcType="INTEGER" />
+    <result column="task_type" property="taskType" jdbcType="INTEGER" />
+    <result column="task_owner" property="taskOwner" jdbcType="VARCHAR" />
+    <result column="task_desc" property="taskDesc" jdbcType="VARCHAR" />
+    <result column="yn" property="yn" jdbcType="INTEGER" />
+    <result column="ts" property="ts" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_pin" property="createPin" jdbcType="VARCHAR" />
+    <result column="update_pin" property="updatePin" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    sys_no, task_no, task_name, task_status, task_type, task_owner, task_desc, yn, ts, 
+    create_time, create_pin, update_pin
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task
+    where sys_no = #{pk,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task
+    where sys_no = #{pk,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.adanac.ssm.intf.common.domain.bean.Task" >
+    insert into task (sys_no, task_no, task_name, 
+      task_status, task_type, task_owner, 
+      task_desc, yn, ts, 
+      create_time, create_pin, update_pin
+      )
+    values (#{sysNo,jdbcType=BIGINT}, #{taskNo,jdbcType=VARCHAR}, #{taskName,jdbcType=VARCHAR}, 
+      #{taskStatus,jdbcType=INTEGER}, #{taskType,jdbcType=INTEGER}, #{taskOwner,jdbcType=VARCHAR}, 
+      #{taskDesc,jdbcType=VARCHAR}, #{yn,jdbcType=INTEGER}, #{ts,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{createPin,jdbcType=VARCHAR}, #{updatePin,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.adanac.ssm.intf.common.domain.bean.Task" >
+    insert into task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sysNo != null" >
+        sys_no,
+      </if>
+      <if test="taskNo != null" >
+        task_no,
+      </if>
+      <if test="taskName != null" >
+        task_name,
+      </if>
+      <if test="taskStatus != null" >
+        task_status,
+      </if>
+      <if test="taskType != null" >
+        task_type,
+      </if>
+      <if test="taskOwner != null" >
+        task_owner,
+      </if>
+      <if test="taskDesc != null" >
+        task_desc,
+      </if>
+      <if test="yn != null" >
+        yn,
+      </if>
+      <if test="ts != null" >
+        ts,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="createPin != null" >
+        create_pin,
+      </if>
+      <if test="updatePin != null" >
+        update_pin,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sysNo != null" >
+        #{sysNo,jdbcType=BIGINT},
+      </if>
+      <if test="taskNo != null" >
+        #{taskNo,jdbcType=VARCHAR},
+      </if>
+      <if test="taskName != null" >
+        #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="taskStatus != null" >
+        #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="taskType != null" >
+        #{taskType,jdbcType=INTEGER},
+      </if>
+      <if test="taskOwner != null" >
+        #{taskOwner,jdbcType=VARCHAR},
+      </if>
+      <if test="taskDesc != null" >
+        #{taskDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="yn != null" >
+        #{yn,jdbcType=INTEGER},
+      </if>
+      <if test="ts != null" >
+        #{ts,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createPin != null" >
+        #{createPin,jdbcType=VARCHAR},
+      </if>
+      <if test="updatePin != null" >
+        #{updatePin,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.adanac.ssm.intf.common.domain.bean.Task" >
+    update task
+    <set >
+      <if test="taskNo != null" >
+        task_no = #{taskNo,jdbcType=VARCHAR},
+      </if>
+      <if test="taskName != null" >
+        task_name = #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="taskStatus != null" >
+        task_status = #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="taskType != null" >
+        task_type = #{taskType,jdbcType=INTEGER},
+      </if>
+      <if test="taskOwner != null" >
+        task_owner = #{taskOwner,jdbcType=VARCHAR},
+      </if>
+      <if test="taskDesc != null" >
+        task_desc = #{taskDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="yn != null" >
+        yn = #{yn,jdbcType=INTEGER},
+      </if>
+      <if test="ts != null" >
+        ts = #{ts,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createPin != null" >
+        create_pin = #{createPin,jdbcType=VARCHAR},
+      </if>
+      <if test="updatePin != null" >
+        update_pin = #{updatePin,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where sys_no = #{sysNo,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.adanac.ssm.intf.common.domain.bean.Task" >
+    update task
+    set task_no = #{taskNo,jdbcType=VARCHAR},
+      task_name = #{taskName,jdbcType=VARCHAR},
+      task_status = #{taskStatus,jdbcType=INTEGER},
+      task_type = #{taskType,jdbcType=INTEGER},
+      task_owner = #{taskOwner,jdbcType=VARCHAR},
+      task_desc = #{taskDesc,jdbcType=VARCHAR},
+      yn = #{yn,jdbcType=INTEGER},
+      ts = #{ts,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_pin = #{createPin,jdbcType=VARCHAR},
+      update_pin = #{updatePin,jdbcType=VARCHAR}
+    where sys_no = #{sysNo,jdbcType=BIGINT}
+  </update>
+  <select id="selectAllTasks" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+      select
+      <include refid="Base_Column_List"/>
+      from task
+      where 1 = 1
+  </select>
+</mapper>

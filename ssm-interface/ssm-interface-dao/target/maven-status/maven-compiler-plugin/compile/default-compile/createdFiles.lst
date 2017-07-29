@@ -1,0 +1,9 @@
+com\adanac\ssm\intf\dao\impl\StudentDaoImpl.class
+com\adanac\ssm\intf\dao\impl\TeacherDaoImpl.class
+com\adanac\ssm\intf\dao\UserDataDao.class
+com\adanac\ssm\intf\dao\impl\UserDataDaoImpl.class
+com\adanac\ssm\intf\dao\impl\TaskDaoImpl.class
+com\adanac\ssm\intf\dao\StudentDao.class
+com\adanac\ssm\intf\dao\UserDao.class
+com\adanac\ssm\intf\dao\TaskDao.class
+com\adanac\ssm\intf\dao\TeacherDao.class

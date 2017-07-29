@@ -1,0 +1,10 @@
+com\adanac\ssm\intf\common\domain\bean\Task.class
+com\adanac\ssm\intf\common\domain\bean\UserData.class
+com\adanac\ssm\intf\common\domain\util\PropertiesUtil.class
+com\adanac\ssm\intf\common\domain\util\MD5Util.class
+com\adanac\ssm\intf\common\domain\util\UUIDGen.class
+com\adanac\ssm\intf\common\domain\bean\Role.class
+com\adanac\ssm\intf\common\domain\bean\Permission.class
+com\adanac\ssm\intf\common\domain\bean\Student.class
+com\adanac\ssm\intf\common\domain\bean\Teacher.class
+com\adanac\ssm\intf\common\domain\bean\User.class

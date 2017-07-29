@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ssm-common/ssm-common.iml" filepath="$PROJECT_DIR$/ssm-common/ssm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-interface/ssm-interface.iml" filepath="$PROJECT_DIR$/ssm-interface/ssm-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-interface/ssm-interface-common/ssm-interface-common.iml" filepath="$PROJECT_DIR$/ssm-interface/ssm-interface-common/ssm-interface-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-interface/ssm-interface-dao/ssm-interface-dao.iml" filepath="$PROJECT_DIR$/ssm-interface/ssm-interface-dao/ssm-interface-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-interface/ssm-interface-service/ssm-interface-service.iml" filepath="$PROJECT_DIR$/ssm-interface/ssm-interface-service/ssm-interface-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-interface/ssm-interface-web/ssm-interface-web.iml" filepath="$PROJECT_DIR$/ssm-interface/ssm-interface-web/ssm-interface-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-platform/ssm-platform.iml" filepath="$PROJECT_DIR$/ssm-platform/ssm-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-platform/ssm-platform-service/ssm-platform-service.iml" filepath="$PROJECT_DIR$/ssm-platform/ssm-platform-service/ssm-platform-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-service/ssm-service.iml" filepath="$PROJECT_DIR$/ssm-service/ssm-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-web/ssm-web.iml" filepath="$PROJECT_DIR$/ssm-web/ssm-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmTiny.iml" filepath="$PROJECT_DIR$/ssmTiny.iml" />
+    </modules>
+  </component>
+</project>

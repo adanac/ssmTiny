@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ssm-common" />
+        <module name="ssm-interface-common" />
+        <module name="ssm-interface-dao" />
+        <module name="ssm-interface-service" />
+        <module name="ssm-interface-web" />
+        <module name="ssm-platform-service" />
+        <module name="ssm-service" />
+        <module name="ssm-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ssm-common" target="1.6" />
+      <module name="ssm-interface" target="1.8" />
+      <module name="ssm-interface-common" target="1.8" />
+      <module name="ssm-interface-dao" target="1.8" />
+      <module name="ssm-interface-service" target="1.8" />
+      <module name="ssm-interface-web" target="1.8" />
+      <module name="ssm-interface-worker" target="1.8" />
+      <module name="ssm-platform" target="1.8" />
+      <module name="ssm-platform-service" target="1.8" />
+      <module name="ssm-service" target="1.8" />
+      <module name="ssm-web" target="1.8" />
+      <module name="ssmTiny" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
